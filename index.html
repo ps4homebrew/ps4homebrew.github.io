@@ -12,31 +12,46 @@
     <button onclick="jbprep()" style="width: 213px; margin-left: 504px; height: 62px; margin-top: 122px;">Prepare</button>
     <script>
       function jbprep() {
-       alert("Preparing... (Press OK)");
-       alert("Done!");
+       alert("Prepared.");
       }
-      </script> <button onclick="load()" style="width: 213px; margin: 0; 504px; height: 62px; margin-top: 122px;">Download
+      </script>
+    <button onclick="load()" style="width: 213px; margin: 0; 504px; height: 62px; margin-top: 122px;">Download
       FIles</button>
     <script>
       function load() {
-       alert("Downloading files... (Press OK)");
-       alert("Done!");
-
+       alert("Downloaded files.");
+       alert("server, out> ready");
       }
-      </script> <button onclick="myFunction()" style="width: 213px; margin-left: 504px; height: 62px; margin-top: 122px;">Connect
+      </script>
+    <button onclick="connect()" style="width: 213px; margin-left: 504px; height: 62px; margin-top: 122px;">Connect
       to JBTOOL</button>
     <script>
-      function myFunction() {
+      function connect() {
        alert("Press [OK] to connect.");
+       alert(">connect");
        alert("ready");
-       alert("prompt()");
        var name = prompt("Enter PIN:", "XXXXXXXX");
        var name = prompt("Enter the IP of the device running Trippy's JBTOOL:", "ip[xxx.xxx.xx.xx]");
        var name = prompt("Enter the password set via Trippy's JBTOOL:", "pass");
        alert("Invalid PIN, try again.");
+       var name = prompt("Enter PIN:", "XXXXXXXX");
+       var name = prompt("Enter the IP of the device running Trippy's JBTOOL:", "ip[xxx.xxx.xx.xx]");
+       var name = prompt("Enter the password set via Trippy's JBTOOL:", "pass");
+       alert("Invalid PIN, try again.");
+       var name = prompt("Enter PIN:", "XXXXXXXX");
+       var name = prompt("Enter the IP of the device running Trippy's JBTOOL:", "ip[xxx.xxx.xx.xx]");
+       var name = prompt("Enter the password set via Trippy's JBTOOL:", "pass");
+			 alert("Too many failed attempts, aborting.");
+       alert(">cancel.");
+      }
+            </script>
 
-
+			<button onclick="jb()" style="width: 213px; margin: 0; 504px; height: 62px; margin-top: 122px;">Jailbreak</button>
+      <script>
+      function jb() {
+       alert("jb: connect: No route to host")
       }
       </script>
   </body>
 </html>
+
